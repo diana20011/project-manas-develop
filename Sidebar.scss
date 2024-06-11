@@ -1,0 +1,107 @@
+.sidebar {
+  &__closes {
+    position: fixed;
+    z-index: 2505;
+    width: 225px;
+    background: #222;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    transition: 0.6s;
+  }
+  &__content {
+    position: fixed;
+    z-index: 2505;
+    width: 225px;
+    background: #222;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    transition: 0.6s;
+
+    &__close {
+      color: #ffff;
+      margin: 5px 190px;
+    }
+  }
+
+  &__info {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    gap: 10px;
+    &__news {
+      color: #ffff;
+      font-size: 14px;
+      &__box {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+
+    &__students {
+      color: #ffff;
+      font-size: 14px;
+
+      &__box {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      &__dropdown {
+        display: flex;
+        flex-direction: column;
+
+        &-link {
+          display: block;
+          padding: 8px 12px;
+          line-height: 1.3;
+          font-size: 14px;
+          color: #eee;
+          background: #2e2e2e;
+          border-bottom: 0px solid #ffff;
+          display: none;
+        }
+      }
+    }
+    &__links {
+      color: #ffff;
+      font-size: 14px;
+
+      &__box {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      &__dropdown {
+        display: flex;
+        flex-direction: column;
+
+        &-link {
+          display: block;
+          padding: 8px 12px;
+          line-height: 1.3;
+          font-size: 14px;
+          color: #eee;
+          background: #2e2e2e;
+          border-bottom: 0px solid #ffff;
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.sidebar__info__links:hover .sidebar__info__links__dropdown-link {
+  display: block;
+}
+.sidebar__info__students:hover .sidebar__info__students__dropdown-link {
+  display: block;
+}
